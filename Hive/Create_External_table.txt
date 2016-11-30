@@ -1,0 +1,8 @@
+set hive.support.sql11.reserved.keywords=false
+CREATE EXTERNAL TABLE tweets_count (
+   word STRING,
+   word_count INT, 
+) 
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+LOCATION '/usr/hduser/hdfiles-ou2tput/';
