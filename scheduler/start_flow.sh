@@ -15,7 +15,7 @@ hadoop fs -mkdir $mrinput_dir
 hadoop fs -mkdir $hist_dir
 
 #start flume.
-####nohup $flume_home/bin/flume-ng agent -n agent -c $flume_home/conf -f $flume_home/conf/flume-conf.properties -Dflume.root.logger=INFO,console&
+nohup $flume_home/bin/flume-ng agent -n agent -c $flume_home/conf -f $flume_home/conf/flume-conf.properties -Dflume.root.logger=INFO,console&
 flume_pid=$!
 echo "flume started with pid"=$flume_pid
 
